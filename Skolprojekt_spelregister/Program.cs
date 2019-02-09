@@ -5,7 +5,7 @@ namespace Skolprojekt_spelregister
     class Program
     {
         static void Main(string[] args)
-        {            
+        {  /*          
             Console.WriteLine("----------------------");
             Console.WriteLine("[1] Registreraspel");
             Console.WriteLine("----------------------");
@@ -17,7 +17,6 @@ namespace Skolprojekt_spelregister
             Console.WriteLine("----------------------");
             Console.WriteLine("[5] Avsluta");
             Console.WriteLine("----------------------");
-
             int menyVal;
             bool val = int.TryParse(Console.ReadLine(), out menyVal);
             if (val == false)
@@ -58,7 +57,52 @@ namespace Skolprojekt_spelregister
                 {
                     Console.WriteLine("Oj! här blev det lite fel, försök att ange en siffra mellan 1-5");
                 }
-            }                       
+            }    */
+
+
+            while (true)
+            {
+                Console.WriteLine("----------------------");
+                Console.WriteLine("[1] Registreraspel");
+                Console.WriteLine("----------------------");
+                Console.WriteLine("[2] Sök efter spel");
+                Console.WriteLine("----------------------");
+                Console.WriteLine("[3] Ta bort spel");
+                Console.WriteLine("----------------------");
+                Console.WriteLine("[4] Visa spelbibliotek");
+                Console.WriteLine("----------------------");
+                Console.WriteLine("[5] Avsluta");
+                Console.WriteLine("----------------------");
+
+                int menyVal;
+                bool val = int.TryParse(Console.ReadLine(), out menyVal);
+
+                if (menyVal == 1)
+                {
+                    RegSpel();
+                }
+                else if (menyVal == 2)
+                {
+                    SökSpel();
+                }
+                else if (menyVal == 3)
+                {
+                    TaBortSpel();
+                }
+                else if (menyVal == 4)
+                {
+                    SpelBibliotek();
+                }
+                else if (menyVal == 5)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Oj! här blev det lite fel, försök att ange en siffra mellan 1-5");
+                }
+            }
+
         }
         public static void RegSpel()
         {
