@@ -10,6 +10,7 @@ namespace Skolprojekt_spelregister
     {
         static void Main(string[] args)
         {
+            int menyVal;
             Console.WriteLine("----------------------");
             Console.WriteLine("1. Registreraspel");
             Console.WriteLine("----------------------");
@@ -22,9 +23,14 @@ namespace Skolprojekt_spelregister
             Console.WriteLine("5. Avsluta");
             Console.WriteLine("----------------------");
 
-            int menyVal = int.Parse(Console.ReadLine());
 
-            while (menyVal != 5)
+            bool val = int.TryParse(Console.ReadLine(), out menyVal);
+            if (val == false)
+            {
+                Console.WriteLine("Oj! här blev det fel, försök att ange en siffra mellan 1-5");
+                
+            }
+            while (menyVal != 5) 
             {
                 switch (menyVal)
 
@@ -54,10 +60,14 @@ namespace Skolprojekt_spelregister
                 Console.WriteLine("5. Avsluta");
                 Console.WriteLine("----------------------");
 
-                menyVal = int.Parse(Console.ReadLine());
+                 val = int.TryParse(Console.ReadLine(), out menyVal);
+                if (val == false)
+                {
+                    Console.WriteLine("Oj! här blev det fel, försök att ange en siffra mellan 1-5");
 
+                }
             }
-
+            
            
         }
         public static void RegSpel()
@@ -81,5 +91,6 @@ namespace Skolprojekt_spelregister
             Console.WriteLine("lägg kod för Visa spelbibliotek här");
             Console.ReadLine();
         }
+   
     }
 }
