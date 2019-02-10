@@ -5,9 +5,8 @@ namespace Skolprojekt_spelregister
     class Program
     {
         static void Main(string[] args)
-        {  /*          
-            Console.WriteLine("----------------------");
-            Console.WriteLine("[1] Registreraspel");
+        {   /*         
+            Console.WriteLine("[1] Registrera spel");
             Console.WriteLine("----------------------");
             Console.WriteLine("[2] Sök efter spel");
             Console.WriteLine("----------------------");
@@ -16,13 +15,8 @@ namespace Skolprojekt_spelregister
             Console.WriteLine("[4] Visa spelbibliotek");
             Console.WriteLine("----------------------");
             Console.WriteLine("[5] Avsluta");
-            Console.WriteLine("----------------------");
-            int menyVal;
-            bool val = int.TryParse(Console.ReadLine(), out menyVal);
-            if (val == false)
-            {
-                Console.WriteLine("Oj! här blev det lite fel, försök att ange en siffra mellan 1-5");                
-            }
+            int menyVal = ReadInt();
+
             while (menyVal != 5) 
             {
                 switch (menyVal)
@@ -40,7 +34,7 @@ namespace Skolprojekt_spelregister
                         SpelBibliotek();
                         break;
                 }
-                Console.WriteLine("----------------------");
+                Console.WriteLine("Oj! här blev det lite fel, försök att ange en siffra mellan 1-5");
                 Console.WriteLine("1. Registrera spel");
                 Console.WriteLine("----------------------");
                 Console.WriteLine("2. Sök efter spel");
@@ -50,20 +44,13 @@ namespace Skolprojekt_spelregister
                 Console.WriteLine("4. Visa spelbibliotek");
                 Console.WriteLine("----------------------");
                 Console.WriteLine("5. Avsluta");
-                Console.WriteLine("----------------------");
-
-                 val = int.TryParse(Console.ReadLine(), out menyVal);
-                if (val == false)
-                {
-                    Console.WriteLine("Oj! här blev det lite fel, försök att ange en siffra mellan 1-5");
-                }
-            }    */
-
+                menyVal = ReadInt();
+            }    
+            */
 
             while (true)
             {
-                Console.WriteLine("----------------------");
-                Console.WriteLine("[1] Registreraspel");
+                Console.WriteLine("[1] Registrera spel");
                 Console.WriteLine("----------------------");
                 Console.WriteLine("[2] Sök efter spel");
                 Console.WriteLine("----------------------");
@@ -72,10 +59,7 @@ namespace Skolprojekt_spelregister
                 Console.WriteLine("[4] Visa spelbibliotek");
                 Console.WriteLine("----------------------");
                 Console.WriteLine("[5] Avsluta");
-                Console.WriteLine("----------------------");
-
-                int menyVal;
-                bool val = int.TryParse(Console.ReadLine(), out menyVal);
+                int menyVal = ReadInt();
 
                 if (menyVal == 1)
                 {
@@ -101,14 +85,14 @@ namespace Skolprojekt_spelregister
                 {
                     Console.WriteLine("Oj! här blev det lite fel, försök att ange en siffra mellan 1-5");
                 }
+                
             }
-
         }
         public static void RegSpel()
         {
             Console.WriteLine("lägg kod för registrera spel här");
-            string titel = Console.ReadLine();
-            
+            string svar = Console.ReadLine();
+        
         }
         public static void SökSpel()
         {
@@ -124,6 +108,18 @@ namespace Skolprojekt_spelregister
         {
             Console.WriteLine("lägg kod för Visa spelbibliotek här");
             Console.ReadLine();
-        }   
+        }
+        public static int ReadInt()
+        {
+
+            int d = 0;
+
+            while (!int.TryParse(Console.ReadLine(), out d))
+            {
+                Console.Write("Måste vara ett numeriskt värde\nFörsök igen: ");
+
+            }
+            return d;
+        }
     }
 }
