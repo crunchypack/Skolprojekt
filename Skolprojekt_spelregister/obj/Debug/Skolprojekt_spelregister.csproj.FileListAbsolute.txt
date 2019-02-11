@@ -4,3 +4,10 @@ C:\Users\tyro0\Desktop\Skolprojekt_spelregister\Skolprojekt_spelregister\bin\Deb
 C:\Users\tyro0\Desktop\Skolprojekt_spelregister\Skolprojekt_spelregister\obj\Debug\Skolprojekt_spelregister.csprojResolveAssemblyReference.cache
 C:\Users\tyro0\Desktop\Skolprojekt_spelregister\Skolprojekt_spelregister\obj\Debug\Skolprojekt_spelregister.exe
 C:\Users\tyro0\Desktop\Skolprojekt_spelregister\Skolprojekt_spelregister\obj\Debug\Skolprojekt_spelregister.pdb
+C:\Users\Simon\Desktop\Skolprojekt\Skolprojekt_spelregister\bin\Debug\Skolprojekt_spelregister.exe.config
+C:\Users\Simon\Desktop\Skolprojekt\Skolprojekt_spelregister\bin\Debug\Skolprojekt_spelregister.exe
+C:\Users\Simon\Desktop\Skolprojekt\Skolprojekt_spelregister\bin\Debug\Skolprojekt_spelregister.pdb
+C:\Users\Simon\Desktop\Skolprojekt\Skolprojekt_spelregister\obj\Debug\Skolprojekt_spelregister.csprojAssemblyReference.cache
+C:\Users\Simon\Desktop\Skolprojekt\Skolprojekt_spelregister\obj\Debug\Skolprojekt_spelregister.csproj.CoreCompileInputs.cache
+C:\Users\Simon\Desktop\Skolprojekt\Skolprojekt_spelregister\obj\Debug\Skolprojekt_spelregister.exe
+C:\Users\Simon\Desktop\Skolprojekt\Skolprojekt_spelregister\obj\Debug\Skolprojekt_spelregister.pdb
